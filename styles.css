@@ -111,6 +111,11 @@ body {
   font-weight: 700;
 }
 
+.button--link:hover {
+  color: #766cf1;
+  text-decoration-line: none;
+}
+
 .button--primary {
   background-color: var(--bright-blue-color);
   color: var(--white-color);
@@ -120,11 +125,19 @@ body {
   border-radius: 1.1rem;
 }
 
+.button--primary:hover {
+  background-color: #766cf1;
+}
+
 .button--ghost {
   color: var(--desaturated-blue-color);
   background-color: transparent;
   width: 100%;
   margin-top: 2.4rem;
+}
+
+.button--ghost:hover {
+  color: var(--dark-blue-color);
 }
 
 .attribution {
