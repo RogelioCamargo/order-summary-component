@@ -26,6 +26,11 @@ body {
   min-height: 100vh;
 }
 
+.background-image {
+	z-index: -1;
+	width: 100%;
+}
+
 .order {
   width: 32.7rem;
   height: 56.7rem;
