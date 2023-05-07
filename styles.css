@@ -21,7 +21,6 @@ html {
 
 body {
   font-family: "Red Hat Display", sans-serif;
-  font-size: 1.4rem;
   background-color: var(--pale-blue-color);
   min-height: 100vh;
 }
@@ -34,6 +33,7 @@ body {
 
 .order {
   width: 32.7rem;
+  font-size: 1.4rem;
   height: 56.7rem;
   background-color: var(--white-color);
   color: var(--desaturated-blue-color);
@@ -150,7 +150,6 @@ body {
 
 @media only screen and (min-width: 768px) {
   body {
-    font-size: 1.6rem;
     line-height: 2.1rem;
   }
 
@@ -173,8 +172,8 @@ body {
   }
 
   .order__description {
+    font-size: 1.6rem;
     line-height: 2.6rem;
-    padding: 1rem;
     margin: 1.6rem 0 2rem 0;
   }
 
@@ -182,6 +181,14 @@ body {
     width: 35.4rem;
     height: 9.8rem;
     padding: 2.4rem;
+  }
+
+  .plan__title {
+    font-size: 1.6rem;
+  }
+
+  .plan__description {
+    font-size: 1.6rem;
   }
 
   .button--ghost {
