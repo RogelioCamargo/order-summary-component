@@ -27,8 +27,9 @@ body {
 }
 
 .background-image {
-	z-index: -1;
-	width: 100%;
+  z-index: -1;
+  width: 100%;
+  object-position: 50% 0;
 }
 
 .order {
@@ -39,14 +40,14 @@ body {
   box-shadow: 0 4rem 4rem -2rem rgba(13, 48, 189, 0.151826);
   border-radius: 2rem;
   overflow: hidden;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .order__image {
-	height: 16rem;
+  height: 16rem;
 }
 
 .order__details {
@@ -76,8 +77,8 @@ body {
   display: flex;
   align-items: center;
   padding: 1.6rem;
-	border-radius: 1.1rem;
-	margin-bottom: 2.4rem;
+  border-radius: 1.1rem;
+  margin-bottom: 2.4rem;
 }
 
 .plan__details {
@@ -87,6 +88,7 @@ body {
 
 .plan__title {
   font-size: 1.4rem;
+  font-weight: 900;
   color: var(--dark-blue-color);
 }
 
@@ -98,7 +100,7 @@ body {
   display: block;
   font-size: 1.5rem;
   line-height: 2rem;
-	font-weight: 900;
+  font-weight: 900;
 }
 
 .button--link {
@@ -113,22 +115,63 @@ body {
   background-color: var(--bright-blue-color);
   color: var(--white-color);
   width: 100%;
-  padding: 1.5rem 6.4rem;
-  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  padding: 1.5rem 0;
+  box-shadow: 0px 2rem 2rem rgba(56, 42, 225, 0.190291);
   border-radius: 1.1rem;
 }
 
 .button--ghost {
-	color: var(--desaturated-blue-color);
-	background-color: transparent;
-	width: 100%;
-	margin-top: 2.4rem;
+  color: var(--desaturated-blue-color);
+  background-color: transparent;
+  width: 100%;
+  margin-top: 2.4rem;
 }
 
 .attribution {
-	font-size: 1.2rem;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+
+  .order {
+    width: 45rem;
+    height: 69.7rem;
+  }
+
+  .order__image {
+    height: 22rem;
+  }
+
+  .order__details {
+    padding: 4.5rem 4.8rem;
+  }
+
+  .order__title {
+    font-size: 2.8rem;
+    line-height: 3.7rem;
+  }
+
+  .order__description {
+    line-height: 2.6rem;
+    padding: 1rem;
+    margin: 1.6rem 0 2rem 0;
+  }
+
+  .plan {
+    width: 35.4rem;
+    height: 9.8rem;
+    padding: 2.4rem;
+  }
+
+  .button--ghost {
+    margin-top: 3.2rem;
+  }
 }
