@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue-color: hsl(225, 100%, 94%);
+  --bright-blue-color: hsl(245, 75%, 52%);
+  --very-pale-blue-color: hsl(225, 100%, 98%);
+  --desaturated-blue-color: hsl(224, 23%, 55%);
+  --dark-blue-color: hsl(223, 47%, 23%);
+  --white-color: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.4rem;
+  background-color: var(--pale-blue-color);
+  min-height: 100vh;
+}
+
+.order {
+  width: 32.7rem;
+  height: 56.7rem;
+  background-color: var(--white-color);
+  color: var(--desaturated-blue-color);
+  box-shadow: 0 4rem 4rem -2rem rgba(13, 48, 189, 0.151826);
+  border-radius: 2rem;
+  overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.order__image {
+	height: 16rem;
+}
+
+.order__details {
+  padding: 3.2rem 2.4rem;
+}
+
+.order__title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+  color: hsl(223, 47%, 23%);
+}
+
+.order__description {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin: 1.6rem 0 2.4rem 0;
+}
+
+.plan {
+  display: grid;
+  width: 27.9rem;
+  height: 8.1rem;
+  background-color: var(--very-pale-blue-color);
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+	border-radius: 1.1rem;
+	margin-bottom: 2.4rem;
+}
+
+.plan__details {
+  margin-left: 2rem;
+  flex: 1;
+}
+
+.plan__title {
+  font-size: 1.4rem;
+  color: var(--dark-blue-color);
+}
+
+.button {
+  border: none;
+  background-color: var(--white-color);
+  width: max-content;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 2rem;
+	font-weight: 900;
+}
+
+.button--link {
+  color: var(--bright-blue-color);
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  text-decoration-line: underline;
+  font-weight: 700;
+}
+
+.button--primary {
+  background-color: var(--bright-blue-color);
+  color: var(--white-color);
+  width: 100%;
+  padding: 1.5rem 6.4rem;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 1.1rem;
+}
+
+.button--ghost {
+	color: var(--desaturated-blue-color);
+	background-color: transparent;
+	width: 100%;
+	margin-top: 2.4rem;
+}
+
+.attribution {
+	font-size: 1.2rem;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
